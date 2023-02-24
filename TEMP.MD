@@ -1,4 +1,4 @@
-<b>App for traveller<b><br>
+<b>App for traveller</b><br>
 I mean I trying make app for example for me<br>
 What I using when travelling:<br>
 -notes(addreses, guides, advices, names, phone numbers ...)<br> 
