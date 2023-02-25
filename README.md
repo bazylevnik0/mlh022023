@@ -8,7 +8,7 @@ KaiOS supporting apps with HTML/CSS/JS and this is my first experience.<br>
 In process of creating I found a good opportunity on KaiOS - React<br>
 Also I found troubles, I dont can used local storage of phone - because it is possible only for "priviliged" apps(as i understand this is through store). And I used Firebase and images like a links - whom stores in web, I mean it is temporary solution but works well.<br>
 
-App can store notes and images, also delete and refresh data from remote database.<br>
+App can store notes and images, also delete and refresh data from the remote database.<br>
 
 Helpfull links about development on KaiOS:<br>
 https://developer.kaiostech.com/docs/development/build-your-first-package-app/test-your-apps/#webide-with-real-device<br>
