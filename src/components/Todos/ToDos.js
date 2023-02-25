@@ -7,17 +7,12 @@ export const ToDos = ({ toDos }) => {
   return (
     <div className={css.todos}>
       {toDos.map( function (toDo, index) {
-        return  <div>
-        <span
+        return  <span
           nav-selectable="true"
           key={index}
           className={`${css.todo} ${toDo.completed ? css.completed : ''}`}>
           {toDo.name}
-        </span><br />
-        <img
-      	  src= {toDo.name} />
-	<hr/>
-        </div>
+        </span>
         } 
       )}
     </div>

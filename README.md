@@ -15,6 +15,7 @@ https://developer.kaiostech.com/docs/development/build-your-first-package-app/te
 https://github.com/kaiostech/sample-react<br>
 https://sites.google.com/view/bananahackers/devices/debug-enabled<br>
 https://developer.kaiostech.com/docs/api/web-apis/deviceStorage/device-storage/<br>
+https://developer.kaiostech.com/docs/getting-started/main-concepts/dpad-navigation/<br>
 */
 i using sample with react - it is just todo list, for my app i need only add adding image functionality and it is will be traveller app<br>
 also app need a save functionality<br> 
