@@ -6,7 +6,7 @@ What I using when travelling:<br>
 usually these things is in a separate apps<br>
   
 in this hackhathon i can try to make one app for all this tasks<br>
-it can be like a private blog(local storage, because in travel you can lost internet connection)<br>
+it can be like a private blog(local storage must be, because in travel you can lost internet connection)<br>
 i mean user uploading all information in a travel page and use this page while making a trip<br>
 
 i will use HTML/CSS/JS and phone on KaiOS
@@ -19,3 +19,9 @@ https://developer.kaiostech.com/docs/api/web-apis/deviceStorage/device-storage/<
 i using sample with react - it is just todo list, for my app i need only add adding image functionality and it is will be traveller app<br>
 also app need a save functionality<br> 
 *i m not have time for make it priviliged app as i understand it is making through store, and i will use internet links for images(acces to storage - have only privileged apps)<br>
+
+firebase
+
+fix css
+make the icon)
+delete toggle functionality
