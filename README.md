@@ -22,7 +22,7 @@ also app need a save functionality<br>
 
 app is using firebase for storing<br>
 
-<b>tasks:</b><br>
+<b>need to do:</b><br>
 fix css<br>
 make the icon<br>
 delete toggle functionality<br>
