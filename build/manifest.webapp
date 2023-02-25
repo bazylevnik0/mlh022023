@@ -3,7 +3,7 @@
   "name": "Traveller",
   "description": "Notes for travelling",
   "type": "web",
-  "launch_path": "https://bazylevnik0.github.io/mlh022023/build/index.html",
+  "launch_path": "/mlh022023/build/index.html",
   "icons": {  
     "56": "https://bazylevnik0.github.io/mlh022023/build/assets/icons/kaios_56.png",
     "112": "https://bazylevnik0.github.io/mlh022023/build/assets/icons/kaios_112.png",
