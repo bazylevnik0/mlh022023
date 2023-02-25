@@ -1,28 +1,20 @@
-<b>App for traveller</b><br>
-I mean I trying make app for example for me<br>
-What I using when travelling:<br>
--notes(addreses, guides, advices, names, phone numbers ...)<br> 
--images(maps, photos of tickets, special documents ...)<br>
-usually these things is in a separate apps<br>
+<h1>Traveller</h1>
+<h2>Make notes about your trip.</h2><br>
+I also love a travelling, and when I planning my journey I making notes: addreses, phones, guides and images: maps, tickets, documents...<br>
+Usually these things in separated apps, and for Hack Around the World 2 I created app with both functionality.<br>
+In my trips I using simple phone(low energy spending, not expensive for lost) and now I am using Nokia with KaiOS<br>
+KaiOS supporting apps with HTML/CSS/JS and this is my first experience.<br>
 
-in this hackhathon i can try to make one app for all this tasks<br>
-it can be like a private blog(local storage must be, because in travel you can lost internet connection)<br>
-i mean user uploading all information in a travel page and use this page while making a trip<br>
+In process of creating I found a good opportunity on KaiOS - React<br>
+Also I found troubles, I dont can used local storage of phone - because it is possible only for "priviliged" apps(as i understand this is through store). And I used Firebase and images like a links - whom stores in web, I mean it is temporary solution but works well.<br>
 
-i will use HTML/CSS/JS and phone on KaiOS
-/*temp
+App can store notes and images, also delete and refresh data from remote database.<br>
+
+Helpfull links about development on KaiOS:
 https://developer.kaiostech.com/docs/development/build-your-first-package-app/test-your-apps/#webide-with-real-device<br>
 https://github.com/kaiostech/sample-react<br>
 https://sites.google.com/view/bananahackers/devices/debug-enabled<br>
 https://developer.kaiostech.com/docs/api/web-apis/deviceStorage/device-storage/<br>
 https://developer.kaiostech.com/docs/getting-started/main-concepts/dpad-navigation/<br>
-*/
-i using sample with react - it is just todo list, for my app i need only add adding image functionality and it is will be traveller app<br>
-also app need a save functionality<br> 
-*i m not have time for make it priviliged app as i understand it is making through store, and i will use internet links for images(acces to storage - have only privileged apps)<br>
 
-app is using firebase for storing<br>
 
-<b>need to do:</b><br>
-delete toggle functionality<br>
-turn off sort<br>

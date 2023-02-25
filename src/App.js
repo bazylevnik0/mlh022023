@@ -74,9 +74,9 @@ export default function App() {
       <Softkey
         left={"CONNECT"}
         onKeyLeft={onKeyLeft}
-        center={current.type === "INPUT" ? "Insert" : "Toggle"}
+        center={"ADD"}
         onKeyCenter={onKeyCenter}
-        right={current.type === "SPAN" ? "Delete" : ""}
+        right={current.type === "SPAN" ? "DELETE" : ""}
         onKeyRight={onKeyRight}
       />
     </>
