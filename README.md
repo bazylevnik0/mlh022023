@@ -10,7 +10,7 @@ Also I found troubles, I dont can used local storage of phone - because it is po
 
 App can store notes and images, also delete and refresh data from remote database.<br>
 
-Helpfull links about development on KaiOS:
+Helpfull links about development on KaiOS:<br>
 https://developer.kaiostech.com/docs/development/build-your-first-package-app/test-your-apps/#webide-with-real-device<br>
 https://github.com/kaiostech/sample-react<br>
 https://sites.google.com/view/bananahackers/devices/debug-enabled<br>
