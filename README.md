@@ -4,7 +4,7 @@ I also love a travelling, and when I planning my journey I making notes: addrese
 Usually these things in separated apps, and for Hack Around the World 2 I created app with both functionality.<br>
 In my trips I using simple phone(low energy spending, not expensive for lost) and now I am using Nokia with KaiOS<br>
 KaiOS supporting apps with HTML/CSS/JS and this is my first experience.<br>
-
+<br>
 In process of creating I found a good opportunity on KaiOS - React<br>
 Also I found troubles, I dont can used local storage of phone - because it is possible only for "priviliged" apps(as i understand this is through store). And I used Firebase and images like a links - whom stores in web, I mean it is temporary solution but works well.<br>
 
