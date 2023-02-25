@@ -31,7 +31,8 @@ export default function App() {
   	length = notesList.length;
   }
   async function setNotes(name) {
-  	await setDoc(doc(db, "notes",name), {
+  	let safe_name = name.replace(/\//g,"|");
+  	await setDoc(doc(db, "notes",safe_name), {
   		name: name
 	});
   }
@@ -40,29 +41,17 @@ export default function App() {
 
   const onKeyLeft = () => {
      getNotes(db);
-     console.log("test left");
   };
   
   const onKeyCenter = () => {
     const currentElement = document.querySelector("[nav-selected=true]");
     const currentNavigationIndex = parseInt(currentElement.getAttribute("nav-index"), 10);
 
-    const isATask = currentNavigationIndex > 0;
-    if (isATask) {
-      setToDo(prevState => {
-        const current = [...prevState];
-        current[currentNavigationIndex - 1].completed = !current[currentNavigationIndex - 1].completed;
-        return current;
-      });
-    } else if (currentElement.value.length) {
-      //const toDo = { name: currentElement.value, completed: false };
-      //setToDo(prevState => [...prevState, toDo]);
+    if (currentElement.value.length) {
       setNotes(""+currentElement.value);
       currentElement.value = "";
     }
-    //setNotes();
-    console.log("test center");
-  };
+     };
 
   const onKeyRight = () => {
     const currentElement = document.querySelector("[nav-selected=true]");
@@ -71,11 +60,10 @@ export default function App() {
       10
     );   
     if (currentIndex > 0) {
-      deleteDoc(doc(db, "notes", ""+currentElement.innerHTML));
-      console.log(currentElement.value);
+      deleteDoc(doc(db, "notes", ""+currentElement.innerHTML.replace(/\//g,"|")));
     }
   };
-
+  
   return (
     <>
       <Header title="Traveller" />

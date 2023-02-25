@@ -3,16 +3,20 @@ import css from './ToDos.module.css';
 
 export const ToDos = ({ toDos }) => {
   if (toDos === undefined || !toDos.length) return null;
-
+  let i = toDos.length;
   return (
-    <div className={css.todos}>
+    <div className={css.todos} tabIndex={""+(i+1)} nav-selectable="true">
       {toDos.map( function (toDo, index) {
-        return  <span
+        return  <div><span
           nav-selectable="true"
           key={index}
-          className={`${css.todo} ${toDo.completed ? css.completed : ''}`}>
+          className="todo"
+          tabIndex={""+(i--)}>
           {toDo.name}
-        </span>
+        </span> 
+        <br />
+        <img src= {toDo.name} />
+	</div>
         } 
       )}
     </div>
