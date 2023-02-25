@@ -30,8 +30,8 @@ export default function App() {
   	setToDo(notesList);
   	length = notesList.length;
   }
-  async function setNotes(index,name) {
-  	await setDoc(doc(db, "notes",index), {
+  async function setNotes(name) {
+  	await setDoc(doc(db, "notes",name), {
   		name: name
 	});
   }
@@ -57,7 +57,7 @@ export default function App() {
     } else if (currentElement.value.length) {
       //const toDo = { name: currentElement.value, completed: false };
       //setToDo(prevState => [...prevState, toDo]);
-      setNotes(""+(length),""+currentElement.value);
+      setNotes(""+currentElement.value);
       currentElement.value = "";
     }
     //setNotes();
@@ -65,12 +65,14 @@ export default function App() {
   };
 
   const onKeyRight = () => {
+    const currentElement = document.querySelector("[nav-selected=true]");
     const currentIndex = parseInt(
-      document.querySelector("[nav-selected=true]").getAttribute("nav-index"),
+      currentElement.getAttribute("nav-index"),
       10
-    );
+    );   
     if (currentIndex > 0) {
-      deleteDoc(doc(db, "notes", ""+(currentIndex-1)));
+      deleteDoc(doc(db, "notes", ""+currentElement.innerHTML));
+      console.log(currentElement.value);
     }
   };
 
